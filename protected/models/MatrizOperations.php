@@ -58,7 +58,7 @@ class MatrizOperations {
     
 
 
-    
+    //función para crear una matriz tridimensional a partir de una tamaño indicado
     private function crearMatriz($tamano)
     {
         for($x = 0; $x <= $tamano ; $x++)
@@ -72,7 +72,9 @@ class MatrizOperations {
             }
         }
     }
-    
+    //función para consultar la suma de la matriz a partir de unas posiciones específicas y hasta otra posición
+    //específica indicadas cada letra en su número uno como punto de partida en el arreglo y cada letra en 
+    //su número 2 como el punto final en el arreglo.
     public function consultarSumaMatriz($x1 , $y1, $z1 , $x2 , $y2, $z2)
     {
         $suma = 0;
@@ -88,7 +90,7 @@ class MatrizOperations {
         }
         return $suma;
     }
-    
+    //función encargada de actualizar los valores de la matriz dada unas coordenadas especificas en el arreglo
     public function actualizarMatriz($x , $y , $z , $valor)
     {
         $this->matriz[$x][$y][$z] = $valor;
